@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    </data>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_tv_close"
+            android:layout_marginHorizontal="@dimen/dimen_15dp"
+            android:layout_marginBottom="@dimen/dimen_15dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="@dimen/dimen_15dp"
+                android:text="@string/hay_trao_cho_anh"
+                android:fontFamily="@font/medium"
+                android:textColor="#232323"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/custom_ripple_rectangle"                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tv_play_list_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingVertical="@dimen/dimen_15dp"
+                android:paddingStart="@dimen/dimen_10dp"
+                android:text="@string/play_list_new"
+                android:fontFamily="@font/medium"
+                android:textColor="#232323"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/custom_ripple_rectangle"
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/tv_name"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_song"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginStart="@dimen/_8sdp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@id/tv_play_list_new"
+                tools:listitem="@layout/item_play_list_song" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+</layout>

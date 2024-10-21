@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@drawable/custom_tv_close"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_15dp"
+            android:layout_margin="@dimen/dimen_15dp">
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="@dimen/dimen_20dp"
+                android:text="@string/arrange_songs"
+                android:fontFamily="@font/medium"
+                android:textColor="#232323"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/custom_ripple_rectangle"
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingVertical="@dimen/dimen_20dp"
+                android:paddingStart="@dimen/dimen_15dp"
+                android:text="@string/theo_th_i_gian"
+                android:fontFamily="@font/medium"
+                android:textColor="#232323"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/custom_ripple_rectangle"
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/tv_name"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/tv_inName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingVertical="@dimen/dimen_20dp"
+                android:paddingStart="@dimen/dimen_15dp"
+                android:text="@string/by_name_A_Z"
+                android:fontFamily="@font/medium"
+                android:textColor="#232323"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/custom_ripple_rectangle"
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/tv_time"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:id="@+id/tv_inName_z_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingVertical="@dimen/dimen_20dp"
+                android:paddingStart="@dimen/dimen_15dp"
+                android:text="@string/by_name_Z_A"
+                android:fontFamily="@font/medium"
+                android:textColor="#232323"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/custom_ripple_rectangle"
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/tv_inName"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/tv_name_sing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingVertical="@dimen/dimen_20dp"
+                android:paddingStart="@dimen/dimen_15dp"
+                android:text="@string/by_the_name_sing"
+                android:fontFamily="@font/medium"
+                android:textColor="#232323"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/custom_ripple_rectangle"
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_inName_z_a"
+                tools:ignore="RtlSymmetry" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+</layout>

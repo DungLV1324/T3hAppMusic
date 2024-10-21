@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ViewMenuHome">
+        <attr name="textBottom" format="string"/>
+        <attr name="imTop" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="RippleCornerTextView">
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="startGradientColor" format="string" />
+        <attr name="endGradientColor" format="string" />
+        <attr name="backgroundColorView" format="string" />
+    </declare-styleable>
+
+
+
+</resources>

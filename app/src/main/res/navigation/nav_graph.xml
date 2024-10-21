@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_fragment"
+    app:startDestination="@id/fragment_home"
+    tools:ignore="InvalidNavigation">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.dunglv.appmusic.ui.home.HomeFragment"
+        android:label="FragmentHome"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/fragment_song"
+        android:name="com.dunglv.appmusic.ui.home.song.SongFragment"
+        android:label="FragmentSong"
+        tools:layout="@layout/fragment_song" />
+    <fragment
+        android:id="@+id/fragment_sing"
+        android:name="com.dunglv.appmusic.ui.home.singer.SingerFragment"
+        android:label="FragmentSinger"
+        tools:layout="@layout/fragment_singer" />
+    <fragment
+        android:id="@+id/fragment_album"
+        android:name="com.dunglv.appmusic.ui.home.album.AlbumFragment"
+        android:label="FragmentAlbum"
+        tools:layout="@layout/fragment_album" />
+    <fragment
+        android:id="@+id/fragment_folder"
+        android:name="com.dunglv.appmusic.ui.home.folder.FolderFragment"
+        android:label="FragmentFolder"
+        tools:layout="@layout/fragment_forder" />
+    <fragment
+        android:id="@+id/fragment_play_music"
+        android:name="com.dunglv.appmusic.ui.playmusic.PlayMusicFM"
+        android:label="FragmentPLayMusic"
+        tools:layout="@layout/fragment_play_music" />
+    <fragment
+        android:id="@+id/fragment_favourite"
+        android:name="com.dunglv.appmusic.ui.favourite.FavouriteFragment"
+        android:label="FragmentPLayMusic"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/fragment_playlist"
+        android:name="com.dunglv.appmusic.ui.playlist.PlayListFragment"
+        android:label="FragmentPLayMusic"
+        tools:layout="@layout/fragment_playlist" />
+    <fragment
+        android:id="@+id/fragment_recently"
+        android:name="com.dunglv.appmusic.ui.recent.RecentlyFragment"
+        android:label="FragmentPLayMusic"
+        tools:layout="@layout/fragment_recently" />
+    <fragment
+        android:id="@+id/fragment_favourite_song"
+        android:name="com.dunglv.appmusic.ui.favourite.song.FavouriteSongFragment"
+        android:label="FragmentSong"
+        tools:layout="@layout/fragment_favourite_song" />
+    <fragment
+        android:id="@+id/fragment_favourite_sing"
+        android:name="com.dunglv.appmusic.ui.favourite.sing.FavouriteSingFragment"
+        android:label="FragmentSinger"
+        tools:layout="@layout/fragment_favourite_sing" />
+    <fragment
+        android:id="@+id/fragment_favourite_album"
+        android:name="com.dunglv.appmusic.ui.favourite.album.FavouriteAlbumFragment"
+        android:label="FragmentFavouriteAlbum"
+        tools:layout="@layout/fragment_favourite_album" />
+    <fragment
+        android:id="@+id/fragment_sing_belong_to_song"
+        android:name="com.dunglv.appmusic.ui.home.singer.singdetailmusic.SingDetailFragment"
+        android:label="FragmentSongAllToMusic"
+        tools:layout="@layout/fragment_sing_belong_to_song" />
+    <fragment
+        android:id="@+id/fragment_folder_belong_to_song"
+        android:name="com.dunglv.appmusic.ui.home.folder.folderdetailmusic.FolderDetail"
+        android:label="FragmentSongAllToMusic"
+        tools:layout="@layout/fragment_folder_belong_to_song" />
+    <fragment
+        android:id="@+id/fragment_album_belong_to_song"
+        android:name="com.dunglv.appmusic.ui.home.album.albumdetailmusic.AlbumDetailFragment"
+        android:label="FragmentSongAllToMusic"
+        tools:layout="@layout/fragment_album_belong_to_song" />
+
+    <fragment
+        android:id="@+id/fragment_detail_play_list"
+        android:name="com.dunglv.appmusic.ui.playlist.detail.DetailPLFragment"
+        android:label="DetailPlayListFragment"
+        tools:layout="@layout/fragment_detail_play_list" />
+    <fragment
+        android:id="@+id/fragment_add"
+        android:name="com.dunglv.appmusic.ui.playlist.add.AddFragment"
+        android:label="DetailPlayListFragment"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/fragment_device_type_add"
+        android:name="com.dunglv.appmusic.ui.playlist.add.typeadd.TypeDeviceAddFragment"
+        android:label="DetailPlayListFragment"
+        tools:layout="@layout/fragment_type_add" />
+    <fragment
+        android:id="@+id/fragment_heart_type_add"
+        android:name="com.dunglv.appmusic.ui.playlist.add.typeadd.TypeHeartAddFragment"
+        android:label="DetailPlayListFragment"
+        tools:layout="@layout/fragment_type_add" />
+    <fragment
+        android:id="@+id/fragment_type_recent_add"
+        android:name="com.dunglv.appmusic.ui.playlist.add.typeadd.TypeRecentAddFragment"
+        android:label="DetailPlayListFragment"
+        tools:layout="@layout/fragment_type_add" />
+
+    <fragment
+        android:id="@+id/fragment_search"
+        android:name="com.dunglv.appmusic.ui.home.search.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/fragment_setting"
+        android:name="com.dunglv.appmusic.ui.setting.SettingFragment"
+        android:label="SettingFragment"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/fragment_languae"
+        android:name="com.dunglv.appmusic.ui.setting.language.LanguageFragment"
+        android:label="LanguageFragment"
+        tools:layout="@layout/fragment_languae" />
+
+</navigation>

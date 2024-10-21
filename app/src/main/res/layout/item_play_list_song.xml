@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_ripple_rectangle"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/medium"
+        android:paddingVertical="@dimen/dimen_20dp"
+        android:text="@string/arrange_songs"
+        android:textColor="#232323"
+        android:textSize="@dimen/dimen_18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+</layout>

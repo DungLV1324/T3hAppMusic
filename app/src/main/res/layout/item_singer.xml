@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+
+    <TextView
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/custom_ripple_rectangle"
+        android:id="@+id/tv_name_sing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/medium"
+        android:padding="@dimen/dimen_10dp"
+        android:text="@string/dung"
+        android:textColor="#232323"
+        android:textSize="@dimen/dimen_16sp" />
+
+</layout>

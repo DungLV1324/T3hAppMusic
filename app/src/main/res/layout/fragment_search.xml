@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="@dimen/dimen_5dp"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/im_back"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:background="@drawable/custom_ripple_back"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/dimen_45dp"
+            android:focusable="true"
+            android:padding="@dimen/dimen_10dp"
+            android:src="@drawable/ic_back_bk"
+            app:layout_constraintBottom_toBottomOf="@id/v_search"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/v_search"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_35dp"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:background="@drawable/custom_tv_search"
+            app:iconifiedByDefault="false"
+            android:layout_marginStart="@dimen/dimen_3dp"
+            app:layout_constraintLeft_toRightOf="@id/im_back"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/im_back"
+            app:queryBackground="@android:color/transparent"
+            app:queryHint="@string/search_for_songs" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_search_song"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/dimen_12dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/v_search"
+            tools:listitem="@layout/item_searchl" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

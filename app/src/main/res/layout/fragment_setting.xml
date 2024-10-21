@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fontFamily="@font/medium"
+            android:gravity="center"
+            android:paddingVertical="@dimen/dimen_15dp"
+            android:text="@string/setting"
+            android:textColor="#232323"
+            android:textSize="@dimen/dimen_20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/im_back"
+            app:layout_constraintLeft_toLeftOf="@id/im_back"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/im_back" />
+
+        <ImageView
+            android:id="@+id/im_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_45dp"
+            android:background="@drawable/custom_ripple_back"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/dimen_20dp"
+            android:src="@drawable/ic_back_bk"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_language"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/custom_setting"
+            android:drawablePadding="@dimen/_10sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/medium"
+            android:gravity="center|left"
+            android:maxLines="1"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/language_options"
+            android:textColor="#232323"
+            android:textSize="@dimen/dimen_20sp"
+            app:drawableLeftCompat="@drawable/ic_languagest"
+            app:drawableRightCompat="@drawable/ic_next"
+            app:layout_constraintLeft_toLeftOf="@id/im_back"
+            app:layout_constraintRight_toRightOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/im_back" />
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/custom_setting"
+            android:drawablePadding="@dimen/_10sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/medium"
+            android:gravity="center|left"
+            android:maxLines="1"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/rate_us"
+            android:textColor="#232323"
+            android:textSize="@dimen/dimen_20sp"
+            app:drawableLeftCompat="@drawable/ic_rate"
+            app:drawableRightCompat="@drawable/ic_next"
+            app:layout_constraintLeft_toLeftOf="@id/im_back"
+            app:layout_constraintRight_toRightOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_language" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_privacy"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_15sdp"-->
+<!--            android:background="@drawable/custom_setting"-->
+<!--            android:drawablePadding="@dimen/_10sdp"-->
+
+<!--            android:ellipsize="end"-->
+<!--            android:fontFamily="@font/medium"-->
+<!--            android:gravity="center|left"-->
+<!--            android:maxLines="1"-->
+<!--            android:padding="@dimen/_15sdp"-->
+<!--            android:text="@string/privacy_policy"-->
+<!--            android:textColor="#232323"-->
+<!--            android:textSize="@dimen/dimen_20sp"-->
+<!--            app:drawableLeftCompat="@drawable/ic_privacy"-->
+<!--            app:drawableRightCompat="@drawable/ic_next"-->
+<!--            app:layout_constraintLeft_toLeftOf="@id/im_back"-->
+<!--            app:layout_constraintRight_toRightOf="@id/tv_title"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tv_rate" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_share"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_15sdp"-->
+<!--            android:background="@drawable/custom_setting"-->
+<!--            android:drawablePadding="@dimen/_10sdp"-->
+<!--            android:ellipsize="end"-->
+<!--            android:fontFamily="@font/medium"-->
+<!--            android:gravity="center|left"-->
+<!--            android:maxLines="1"-->
+<!--            android:padding="@dimen/_15sdp"-->
+<!--            android:text="@string/share_app"-->
+<!--            android:textColor="#232323"-->
+<!--            android:textSize="@dimen/dimen_20sp"-->
+<!--            app:drawableLeftCompat="@drawable/ic_sharest"-->
+<!--            app:drawableRightCompat="@drawable/ic_next"-->
+<!--            app:layout_constraintLeft_toLeftOf="@id/im_back"-->
+<!--            app:layout_constraintRight_toRightOf="@id/tv_title"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tv_privacy" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

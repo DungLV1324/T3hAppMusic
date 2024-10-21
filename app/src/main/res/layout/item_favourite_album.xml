@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/dimen_5dp"
+        android:background="@drawable/custom_ripple_rectangle"
+        android:layout_marginVertical="@dimen/dimen_5dp"        >
+
+        <ImageView
+            android:id="@+id/im_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:paddingVertical="@dimen/dimen_15dp"
+            app:layout_constraintDimensionRatio="50:60"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+           android:src= "@drawable/ic_mi_music" />
+
+        <ImageView
+            android:id="@+id/im_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:padding="@dimen/dimen_10dp"
+            android:src="@drawable/ic_playrc"
+            app:layout_constraintBottom_toBottomOf="@id/im_avatar"
+            app:layout_constraintRight_toRightOf="@id/im_avatar" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/medium"
+            android:maxLines="1"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textStyle="bold"
+            android:text="@string/dung_dang_cap"
+            android:textColor="#232323"
+            android:textSize="@dimen/dimen_20sp"
+            app:layout_constraintBottom_toTopOf="@id/tv_number_song"
+            app:layout_constraintLeft_toLeftOf="@id/im_avatar"
+            app:layout_constraintTop_toBottomOf="@id/im_avatar"
+            tools:ignore="Dung" />
+
+        <TextView
+            android:id="@+id/tv_number_song"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/medium"
+
+            android:gravity="left|center"
+            android:maxLines="1"
+            android:text="@string/dung"
+            android:textColor="#9B9B9B"
+            android:textSize="@dimen/dimen_15sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
